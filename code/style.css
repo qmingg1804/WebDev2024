@@ -282,3 +282,61 @@ h4 {
 .projects-section {
   margin-bottom: 100px;
 }
+
+/* Đang chỉnh*/
+
+.footer {
+  font-family:  "DM Serif Display", serif;
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid gray;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-info h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+      margin-bottom: 10px;
+  }
