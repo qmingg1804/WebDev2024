@@ -69,7 +69,18 @@ nav ul li a:hover {
 
   .title a {
     color: #000000; 
-    text-decoration:underline dotted ;
+    text-decoration:underline dotted;
+  }
+
+  .title p {
+    font-family: "DM Serif Display", serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 10px;
   }
   
   .title a:hover {
@@ -275,7 +286,7 @@ nav ul li a:hover {
 
 
 .projects-section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 
