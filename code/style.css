@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -78,22 +81,59 @@ nav ul li a:hover {
   }
 
 
-  
-  
+.prj-container {
+  font-family: "DM Serif Display", serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
 
-.image-container {
+.project-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.project-text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.project-text p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+.project-image {
+  flex: 1;
   position: relative;
+  height: 100%;
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
+  border: none;
+  padding: 0;
 }
 
-.image {
+.project-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
-.overlay {
+.project-image .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,102 +147,24 @@ nav ul li a:hover {
   transition: opacity 0.3s ease;
 }
 
-.image-container:hover .overlay {
+.project-image:hover .overlay {
   opacity: 1;
 }
 
-.overlay button {
-  background-color: #2c2c2c;
-  color: white;
-  border: none;
+.project-image .button {
+  background-color: white;
+  color: black;
   padding: 10px 20px;
+  text-decoration: none;
   font-size: 16px;
-  cursor: pointer;
+  border-radius: 5px;
 }
 
-.overlay button:hover {
-  background-color: #000000;
-}
-
-.info-bar {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-  padding: 10px;
-  text-align: left;
-  font-family: "DM Serif Display", serif;
-  font-size: 16px;
-}
-
-
-.image-container {
-  margin-bottom: 40px;
-}
-
-
-.image-container-second {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.image-second {
-  width: 100%;
-  height: auto;
-}
-
-.overlay-second {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container-second:hover .overlay-second {
-  opacity: 1;
-}
-
-.overlay-second button {
-  background-color: #2c2c2c;
+.project-image .button:hover {
+  background-color: black;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-.overlay-second button:hover {
-  background-color: #000000;
-}
-
-.info-bar-second {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-  padding: 10px;
-  text-align: left;
-  font-family: "DM Serif Display", serif;
-  font-size: 16px;
-}
-
-.image-container-second {
-  margin-bottom: 40px;
-}
-
 
 
 .projects-section {
@@ -212,9 +174,13 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-h2 {
+.projects-section h2 {
   font-size: 24px;
   color: #333;
+}
+
+.projects-section p   {
+  font-family: "Raleway", sans-serif;
 }
 
 .projects-container {
@@ -258,13 +224,13 @@ h2 {
   border-radius: 4px;
 }
 
-h3 {
+.projects-section h3 {
   font-size: 20px;
   color: white;
   margin: 0;
 }
 
-h4 {
+.projects-section p {
   font-size: 14px;
   color: white;
   margin: 5px 0 0;
@@ -283,60 +249,49 @@ h4 {
   margin-bottom: 100px;
 }
 
+
+
+
+
 /* Đang chỉnh*/
 
-.footer {
-  font-family:  "DM Serif Display", serif;
-  background-color: white;
-  padding: 20px 0;
-  text-align: center;
+footer {
   border-top: 1px solid gray;
-  font-size: 14px;
-}
-
-.footer-container {
+  width: 90%;
+  margin: 30px 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.footer_box {
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  justify-content: center;
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
-  flex: 1;
+.footer_box h2 {
+  font-family: DM Serif Display, Serif;
 }
 
-.footer-left {
-  text-align: left;
+.footer_box p {
+  font-family: "Raleway", sans-serif;
 }
 
-.footer-center {
+.contact-link {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
   text-align: center;
 }
 
-.footer-right {
-  text-align: right;
+.contact-icon {
+  width: 22px;
+  height: auto;
 }
-
-.footer-info h5 {
-  margin: 0;
-  font-weight: bold;
-}
-
-.footer-icons a {
-  margin: 0 10px;
-}
-
-.footer-icons img {
-  width: 24px;
-  height: 24px;
-}
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-      margin-bottom: 10px;
-  }
