@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *Nguyễn Quang Bách*
-* ID: *22BI13053*
+* Name: *Nguyễn Quang Minh*
+* ID: *22BI13299*
 * Group ID: *4*
 * Project Name: *Personal Portfolio Website*
